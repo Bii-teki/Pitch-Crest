@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import Loader from "./Loader"
+
 import React from "react";
 
 function Projects({ id, onClose }) {
@@ -76,7 +78,7 @@ function Projects({ id, onClose }) {
 
 
             ) : (
-              <p>Loading user investor details...</p>
+             <Loader />
             )}
 
 
